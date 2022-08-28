@@ -583,5 +583,14 @@ footer span a:hover{
     .home .home-content .text-3{
         font-size: 27px;
     }
+*{
+    margin: 0;
+    overflow-x: hidden;
 }
-/*video*/
+.about .title::after{
+    display: none;
+}
+.contact .title::after{
+    display: none;
+}
+}
