@@ -13,7 +13,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -37,6 +36,9 @@
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
+                <video autoplay muted loop poster="image/fogo.jpg">
+                    <source src="image/fogo.mp4" type="video/mp4">
+                </video>
                 <div class="text-1">Olá, nós somos a</div>
                 <div class="text-2">Alex DT Churrasqueiras</div>
                 <div class="text-3">e nossas especialidades são <span class="typing"></span></div>
@@ -69,27 +71,35 @@
             <div class="serv-content">
                <div class="card">
                    <div class="box">
+                    <a href="churrasqueiras.html">
+
                     <i class="fa-solid fa-drumstick-bite"></i>
                     <div class="text">Churrasqueiras</div>
                     <p>Para um churrasco incrível, não podem faltar churrasqueiras artesanais, né? Clique aqui para ver nossos modelos.</p>
                    </div>
                </div>
+            </a>
 
                <div class="card">
                 <div class="box">
+                    <a href="fornos.html">
+
                     <i class="fa-solid fa-fire"></i>
                     <div class="text">Fornos</div>
                  <p>Bolos, carnes e muito mais, feitos em um forno a lenha fica uma delícia, não é? Veja mais!</p>
                 </div>
-            </div>
+            </div></a>
 
             <div class="card">
                 <div class="box">
+                    <a href="mais.html">
+
                     <i class="fa-solid fa-fire-burner"></i>
                     <div class="text">Muito mais!</div>
                  <p>Pias, balcões, soleiras e até mesmo lareiras. Seus sonhos são o limite!</p>
                 </div>
             </div>
+        </a>
             </div>
         </div>
     </section>
@@ -147,21 +157,21 @@
             </div><!--column left-->
             <div class="column rigth">
                 <div class="text">Mensagem</div>
-                <form action="#">
+                <form action="https://formsubmit.co/yaritzamicaelleb@gmail.com" method="post">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+
                     <div class="fields">
                         <div class="field name">
-                            <input type="text" placeholder="Nome" required>
+                            <input name= "name" type="text" placeholder="Nome" required>
                         </div>
                         <div class="field email">
-                            <input type="email" placeholder="Email" required>
+                            <input name= "email" type="email" placeholder="Email" required>
                         </div>
                     </div>
                     <div class="field">
-                        <div class="field">
-                            <input type="text" placeholder="Sobrenome">
-                        </div>
                         <div class="field textarea">
-                           <textarea  cols="30" rows="10" placeholder="Escrever...." required></textarea>
+                           <textarea  name= "message" cols="30" rows="10" placeholder="Escrever...." required></textarea>
                         </div>
                         <div class="button">
                             <button type="submit">Enviar</button>
