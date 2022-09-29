@@ -534,7 +534,48 @@ footer {
   background: none;
 }
 .produtos {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+	padding-left: 50px;
+  padding-top: 50px;
+  width: 250vh;
+	height: 100vh;
   background-color: #fff;
+}
+.filtro {
+  background-color: #8d4c57;
+  border-radius: 10px;
+	padding-left: 50px;
+  padding-top: 50px;
+  max-width: 100%;
+  max-height: 30%;
+  width: 35vh;
+	height: 50vh;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+.produtos {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card_produto {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.card_produto img {
+  border-radius: 6px;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
