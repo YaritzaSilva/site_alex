@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 .max-width {
   max-width: 1300px;
   padding: 0 80px;
@@ -23,31 +26,38 @@ html {
   z-index: 999;
   transition: all 0.3s ease;
 }
+
 .navbar.sticky {
   background: #68202c;
   padding: 15px 0;
 }
+
 .navbar .max-width {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .navbar .logo a {
   color: #fff;
   font-size: 35px;
   font-weight: 500;
 }
+
 .navbar .logo a span {
   color: #68202c;
   transition: all 0.3s ease;
 }
+
 .navbar.sticky .logo a span {
   color: #fff;
 }
+
 .navbar .menu li {
   list-style: none;
   display: inline-block;
 }
+
 .navbar .menu li a {
   color: #fff;
   font-size: 18px;
@@ -55,12 +65,15 @@ html {
   margin-left: 25px;
   transition: color 0.3s ease;
 }
+
 .navbar .menu li a:hover {
   color: #68202c;
 }
+
 .navbar.sticky .menu li a:hover {
   color: #fff;
 }
+
 /*  Home   inicio  */
 .home {
   display: flex;
@@ -69,38 +82,44 @@ html {
   min-height: 500px;
   font-family: "Ubuntu", sans-serif;
 }
-.home video{
-	position: fixed; 
-	right: 0; 
-	bottom: 0;
-	min-width: 100%; 
-	min-height: 100%;
-	width: auto; 
-	height: auto; 
-	z-index: -1000;
-	background: url(image/fogo.jpg) no-repeat;
-	background-size: cover; 
+
+.home video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  background: url(image/fogo.jpg) no-repeat;
+  background-size: cover;
 }
 
 .home .max-width {
   margin: auto 0 auto 40px;
 }
+
 .home .home-content .text-1 {
   font-size: 27px;
 }
+
 .home .home-content .text-2 {
   font-size: 75px;
   font-weight: 500;
   margin-left: -3px;
 }
+
 .home .home-content .text-3 {
   font-size: 40px;
   margin: 5px 0;
 }
+
 .home .home-content .text-3 span {
   color: #ffd195;
   font-weight: 500;
 }
+
 .home .home-content a {
   display: inline-block;
   background: #68202c;
@@ -111,22 +130,27 @@ html {
   border-radius: 6px;
   border: 2px solid #68202c;
 }
+
 .home .home-content a:hover {
   color: #68202c;
   background: none;
 }
+
 /*serviços*/
 .services {
   background: #111;
   color: #fff;
 }
+
 .services .title::before .title::before {
   background: #fff;
 }
+
 .services .title::after .title::after {
   background: #111;
   content: "Que oferecemos";
 }
+
 .services .serv-content .card {
   width: calc(33% - 20px);
   background: #222;
@@ -136,31 +160,39 @@ html {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .services .serv-content .card:hover {
   background: #68202c;
 }
+
 .services .serv-content .card .box {
   transition: all 0.3s ease;
 }
+
 .services .serv-content .card:hover .box {
   transform: scale(1.05);
 }
+
 .services .serv-content .card i {
   font-size: 70px;
   color: #68202c;
 }
+
 .services .serv-content .card:hover i {
   color: #fff;
 }
+
 .services .serv-content .card .text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
   color: #fff;
 }
+
 .services .serv-content .card .box a {
   color: #fff;
 }
+
 /*  Menu  Mobile  */
 .menu-btn {
   color: #fff;
@@ -168,57 +200,72 @@ html {
   cursor: pointer;
   display: none;
 }
+
 /*contato*/
 .contact {
   background-color: #fff;
 }
+
 .contact .title::after {
   content: "Fale conosco";
 }
+
 .contact .contact-content .column {
   width: calc(50% - 30px);
 }
+
 .contact .contact-content {
   align-items: flex-start;
 }
+
 .contact .contact-content .left p {
   text-align: justify;
 }
+
 .contact .contact-content .text {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 10px;
 }
+
 .contact .contact-content .left .i {
   margin: 10px 0;
 }
+
 .contact .contact-content .row {
   display: flex;
   height: 65px;
   align-items: center;
 }
+
 .contact .contact-content .row .info {
   margin-left: 30px;
 }
+
 .contact .contact-content .row .info .head {
   font-weight: 500;
 }
+
 .contact .contact-content .row .info .sub-title {
   color: #333;
 }
+
 .contact .contact-content .row i {
   font-size: 25px;
   color: #68202c;
 }
+
 .contact .rigth form .fields {
   display: flex;
 }
+
 .contact .rigth form .field,
 .contact .rigth form .fields .field {
   width: 100%;
   height: 45px;
   margin-bottom: 15px;
 }
+
 .contact .rigth form .field input,
 .contact .rigth form .textarea textarea {
   width: 100%;
@@ -230,24 +277,30 @@ html {
   font-size: 17px;
   font-family: "Roboto", sans-serif;
 }
+
 .contact .rigth form .name {
   margin-right: 10px;
 }
+
 .contact .rigth form .email {
   margin-left: 10px;
 }
+
 .contact .rigth form .textarea {
   width: 100%;
   height: 80px;
 }
+
 .contact .rigth form .textarea textarea {
   padding-top: 10px;
   resize: none;
 }
+
 .contact .rigth form .button {
   width: 170px;
   height: 47px;
 }
+
 .contact .rigth form .button button {
   width: 100%;
   height: 100%;
@@ -260,6 +313,7 @@ html {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .contact .rigth form .button button:hover {
   color: #68202c;
   background: none;
@@ -272,10 +326,12 @@ footer {
   color: #fff;
   text-align: center;
 }
+
 footer span a {
   color: #68202c;
   text-decoration: none;
 }
+
 footer span a:hover {
   text-decoration: underline;
 }
@@ -284,6 +340,7 @@ footer span a:hover {
 section {
   padding: 100px 0;
 }
+
 section .title {
   font-family: "Ubuntu", sans-serif;
   text-align: center;
@@ -293,6 +350,7 @@ section .title {
   padding-bottom: 20px;
   position: relative;
 }
+
 section .title::before {
   content: "";
   position: absolute;
@@ -303,6 +361,7 @@ section .title::before {
   background: #111;
   transform: translateX(-50%);
 }
+
 section .title::after {
   position: absolute;
   bottom: -12px;
@@ -313,12 +372,14 @@ section .title::after {
   padding: 5px;
   transform: translateX(-50%);
 }
+
 .about,
 .services,
 .contact,
 footer {
   font-family: "Roboto", sans-serif;
 }
+
 .about .about-content,
 .services .serv-content,
 .contact .contact-content {
@@ -333,23 +394,29 @@ footer {
 .about .title::after {
   content: "Quem sou eu";
 }
+
 .about .about-content .left {
   width: 45%;
 }
+
 .about .about-content .right {
   width: 55%;
 }
+
 .about .about-content .right .text {
   font-size: 25px;
   font-weight: 500;
   margin-bottom: 10px;
 }
+
 .about .about-content .right .text span {
   color: #68202c;
 }
+
 .about .about-content .right p {
   text-align: justify;
 }
+
 .about .about-content .right a {
   display: inline-block;
   background: #68202c;
@@ -362,16 +429,19 @@ footer {
   border: 2px solid #68202c;
   transition: all 0.3s ease;
 }
+
 .about .about-content .right a:hover {
   color: #68202c;
   background: none;
 }
+
 .about .about-content .left img {
   width: 400px;
   height: 400px;
   object-fit: cover;
   border-radius: 6px;
 }
+
 .about {
   background-color: #fff;
 }
@@ -382,26 +452,31 @@ footer {
     margin-left: 0;
   }
 }
+
 @media (max-width: 1104px) {
   .about .about-content .left img {
     width: 350px;
     height: 350px;
   }
 }
+
 @media (max-width: 991px) {
   .navbar .max-width {
     padding: 0 50px;
   }
 }
+
 @media (max-width: 947px) {
   .max-width {
     max-width: 800px;
     padding: 0 50px;
   }
+
   .menu-btn {
     display: block;
     z-index: 999;
   }
+
   .navbar .menu {
     position: fixed;
     width: 100%;
@@ -413,112 +488,137 @@ footer {
     text-align: center;
     transition: all 0.3s ease;
   }
+
   .navbar .menu.active {
     left: 0;
   }
+
   .navbar .menu li {
     display: block;
   }
+
   .navbar .menu li a {
     display: inline-block;
     margin: 20px 0;
     font-size: 25px;
   }
+
   .home .home-content .text-2 {
     font-size: 70px;
   }
+
   .home .home-content .text-3 {
     font-size: 35px;
   }
+
   .home .home-content a {
     font-size: 23px;
     padding: 10px 30px;
   }
+
   .about .about-content .column {
     width: 50%;
   }
+
   .about .about-content .left {
     display: flex;
     justify-content: center;
     margin: 0 auto 60px;
   }
+
   .about .about-content .right {
     flex: 100%;
   }
+
   .services .serv-content .card {
     width: calc(50% - 10px);
     margin-bottom: 20px;
   }
+
   .skills .skills-content .column,
   .contact .contact-content .column {
     width: 100%;
     margin-bottom: 35px;
   }
+
   footer {
     margin-top: 15px;
   }
 }
+
 @media (max-width: 690px) {
   .home .home-content .text-2 {
     font-size: 60px;
   }
+
   .home .home-content .text-3 {
     font-size: 32px;
   }
+
   .home .home-content a {
     font-size: 20px;
   }
+
   .services .serv-content .card {
     width: 100%;
   }
 }
+
 @media (max-width: 500px) {
   .home .home-content .text-2 {
     font-size: 50px;
   }
+
   .home .home-content .text-3 {
     font-size: 27px;
   }
+
   * {
     margin: 0;
     overflow-x: hidden;
   }
+
   .about .title::after {
     display: none;
   }
+
   .contact .title::after {
     display: none;
   }
 }
+
 /*produtos - churrasqueiras */
 .churrasqueiras {
-    display: flex;
-    height: 50vh;
-    color: #fff;
-    min-height: 500px;
-    font-family: "Ubuntu", sans-serif;
-  }
-  .churrasqueiras video{
-    position: fixed; 
-    right: 0; 
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-    width: auto; 
-    height: auto; 
-    z-index: -1000;
-    background: url(image/fogo.jpg) no-repeat;
-    background-size: cover; 
-  }
-  
-  .churrasqueiras .max-width {
-    margin: auto 0 auto 40px;
-  }
-  .churrasqueiras .churras-content .text-2 {
-    font-size: 75px;
-    font-weight: 500;
-    margin-left:-3px;
+  display: flex;
+  height: 50vh;
+  color: #fff;
+  min-height: 500px;
+  font-family: "Ubuntu", sans-serif;
 }
+
+.churrasqueiras video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  background: url(image/fogo.jpg) no-repeat;
+  background-size: cover;
+}
+
+.churrasqueiras .max-width {
+  margin: auto 0 auto 40px;
+}
+
+.churrasqueiras .churras-content .text-2 {
+  font-size: 75px;
+  font-weight: 500;
+  margin-left: -3px;
+}
+
 .churrasqueiras .churras-content a {
   display: inline-block;
   background: #68202c;
@@ -529,33 +629,38 @@ footer {
   border-radius: 6px;
   border: 2px solid #68202c;
 }
+
 .churrasqueiras .churras-content a:hover {
   color: #68202c;
   background: none;
 }
+
 .produtos {
   max-width: 100%;
-	padding-left: 50px;
+  padding-left: 50px;
   padding-top: 50px;
   width: 250vh;
-	height: 100vh;
+  height: 100vh;
   background-color: #fff;
 }
+
 .filtro {
-  background-color: #8d4c57;
+  background-color: #68202c;
   border-radius: 10px;
-	padding-left: 50px;
+  padding-left: 50px;
   padding-top: 50px;
   max-width: 100%;
   max-height: 30%;
   width: 35vh;
-	height: 50vh;
+  height: 50vh;
 }
+
 .column {
   float: left;
   width: 25%;
   padding: 0 10px;
 }
+
 .produtos {
   content: "";
   display: table;
@@ -563,7 +668,8 @@ footer {
 }
 
 .card_produto {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
   background-color: #f1f1f1;
@@ -572,10 +678,35 @@ footer {
 .card_produto img {
   border-radius: 6px;
 }
+
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
     display: block;
     margin-bottom: 20px;
   }
+}
+
+#filtros {
+  font-size: 30px;
+  font-weight: 500;
+  padding: 10px;
+  margin-top: 2px;
+  margin-bottom: 4px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ccc;
+}
+
+.box_filtros {
+  background-color: #ffffff;
+  border-radius: 10px;
+
+  max-width: 100%;
+  max-height: 70%;
+  margin-right: 20px;
+  margin-left: -5px;
+  float: left;
+  width: 85%;
+  height: 85%;
+  padding: 0 10px;
 }
