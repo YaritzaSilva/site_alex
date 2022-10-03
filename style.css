@@ -640,42 +640,53 @@ footer {
   padding-left: 50px;
   padding-top: 50px;
   width: 300vh;
-  height: 300vh;
+  height: 200vh;
   background-color: #fff;
 }
+
 @keyframes slidy {
   0% {
     left: 0%;
   }
+
   20% {
     left: 0%;
   }
+
   25% {
     left: -100%;
   }
+
   45% {
     left: -100%;
   }
+
   50% {
     left: -200%;
   }
+
   70% {
     left: -200%;
   }
+
   75% {
     left: -300%;
   }
+
   95% {
     left: -300%;
   }
+
   100% {
     left: -400%;
   }
 }
-.textolegenda h3{
+
+.textolegenda h3 {
   font-family: "Ubuntu", sans-serif;
   font-size: 24px;
 }
+
 .slider {
   overflow: hidden;
   display: grid;
@@ -691,6 +702,7 @@ footer {
   float: left;
   border-radius: 10px;
 }
+
 .slider figure {
   position: relative;
   width: 500%;
@@ -701,6 +713,7 @@ footer {
   .churrasqueiras .churras-content .text-2 {
     font-size: 30px;
   }
+
   .churrasqueiras .churras-content a {
     display: inline-block;
     text-align: left;
@@ -713,43 +726,91 @@ footer {
     border: 2px solid #68202c;
   }
 }
-.modalVisual{ /*Classe*/
-  display:none; /*Esconder a janela por padrão*/
-  position:fixed;/*Permanecer na posição fixa*/
-  z-index:1; /*Posicionar no topo da pilha*/
-  padding-top:100px;/*Margem interna superior*/
-  left:0; /*Posição X*/
-  top:0; /*Posição Y*/
-  width:100%; /*Largura total da tela*/
-  height:100%; /*Altura total da tela*/
-  overflow:auto; /*Barra de rolagem se necessário*/
-  background-color:rgba(0,0,0,0.8); /*Cor de fundo e opacidade de 80%*/
-}
-.modalConteudo{ /*Classe*/
-  margin:auto; /*Margens em auto para que o conteúdo fique no centro*/
-  display:block; /*Para que ocupe toda a linha e o próximo item passe para alinha de baixo*/
-  width:100%; /*Largura total disponível*/
-  max-width:800px; /*Largura máxima permitida, então width:100%; é igual a 800px*/
-}
-#txtImg{
-  margin:auto; /*Centralizar o conteúdo*/
-  display:block; /*Para que ocupe toda a linha e o próximo item passe para alinha de baixo*/
-  width:80%; /*Largura*/
-  max-width:700px; /*Largura máxima permitida*/
-  text-align:center; /*Alinhamento do texto ao centro*/
-  color:#ccc; /*Cor do texto*/
-  padding:10px 0; /*Margem interna*/
-  height:150px;}
 
-  #fechar{
-    position:absolute;
-    top:66px;
-    right:50px;
-    color:rgb(0, 0, 0);
-    font-size:40px;
-    font-weight:bold;
-    cursor:pointer;
-    border-radius: 50px;
-    padding: 5px 10px 10px 10px;
-    text-align: center;
+.modalVisual {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(94, 16, 16, 0.8);
+
+}
+
+.modalConteudo {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 800px;
+
+}
+
+#txtImg {
+
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+#fechar {
+  position: absolute;
+  top: 66px;
+  right: 50px;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 5px 10px 10px 10px;
+  text-align: center;
+}
+
+.botaocontato {
+  text-align: center;
+}
+
+#contato {
+  position: absolute;
+  bottom: -10vh;
+  width: 350px;
+  background: #68202c;
+  color: #fff;
+  font-size: 25px;
+  padding: 12px 36px;
+  border-radius: 6px;
+  border: 2px solid #68202c;
+  cursor: pointer;
+  text-align: center;
+
+}
+
+#contato:hover {
+  color: #68202c;
+  background: #ccc;
+  border: transparent;
+}
+
+footer .redessociais {
+  position: relative;
+  margin-bottom: 2vh;
+}
+
+.redessociais i {
+  margin-right: 2vh;
+  padding: 10px 2px;
+  max-width: 2vh;
+  width: 5vh;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 20px;
+
 }
