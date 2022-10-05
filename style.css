@@ -545,7 +545,6 @@ footer {
     margin-top: 15px;
   }
 }
-
 @media (max-width: 690px) {
   .home .home-content .text-2 {
     font-size: 60px;
@@ -584,6 +583,9 @@ footer {
 
   .contact .title::after {
     display: none;
+  }
+  #contato {
+    left: 10vh;
   }
 }
 
@@ -744,7 +746,7 @@ footer {
 .modalConteudo {
   margin: auto;
   display: block;
-  width: 100%;
+  width: 50%;
   max-width: 800px;
 
 }
@@ -780,10 +782,11 @@ footer {
 
 #contato {
   position: absolute;
-  bottom: -10vh;
+  bottom: -35vh;
+  left: 80vh;
   width: 350px;
-  background: #68202c;
-  color: #fff;
+  background: #ffffff;
+  color: #68202c;
   font-size: 25px;
   padding: 12px 36px;
   border-radius: 6px;
@@ -794,8 +797,8 @@ footer {
 }
 
 #contato:hover {
-  color: #68202c;
-  background: #ccc;
+  color: #ffffff;
+  background: #68202c;
   border: transparent;
 }
 
@@ -813,4 +816,23 @@ footer .redessociais {
   border-radius: 10px;
   font-size: 20px;
 
+}
+
+.zoom {
+  position: relative;
+  border: 1px solid #000;
+  overflow: hidden;
+  width: 400px;
+  margin: 100px;
+}
+.zoom img {
+  max-width: 100%;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.zoom:hover img {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
